@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+body {
+     background-image: url(/images/pattern-background-desktop.svg);
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-color: hsl(225, 100%, 94%);
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-family: "Red Hat Display";
+}
+
+.card {
+     width: 23rem;
+     height: 80vh;
+     border-radius: 12px;
+     overflow: hidden;
+     background-color:hsl(225, 100%, 98%) ;
+
+}
+
+.cover {
+     width: inherit;
+     height: 12rem;
+
+}
+
+.card-detail {
+     padding: 2.5rem;
+     text-align: center;
+     flex-direction: column;
+     
+}
+
+.heading {
+     font-size: 1.7rem;
+     font-weight: 900;
+}
+
+.para {
+     text-align: center;
+     padding: 1.2rem 0 1.2rem 0;
+     color: hsl(223, 3%, 52%);
+     font-weight: 500;
+}
+ .change a {
+     transition: color 0.15s;
+ }
+.change a:hover {
+     color: hsl(224, 23%, 55%) ;
+}
+
+.subscription {
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     background-color:hsl(217, 44%, 96%);
+     border-radius: 10px;
+     padding: 1rem 0;
+}
+
+.subscription-detail {
+     display: flex;
+     align-items: center;
+     flex-direction: row;
+     gap: 15px;
+}
+
+.detail span {
+     font-weight: 700;
+}
+
+.detail p {
+     color: hsl(223, 3%, 52%);
+}
+
+.button button {
+     padding: 1rem 4.5rem;
+     border: none;
+     font-size: 0.9rem;
+     border-radius: 10px;
+     background-color:hsl(245, 75%, 52%);
+     color: white;
+     font-weight: 700;
+     cursor: pointer;
+     margin-top: 15px;
+     
+}
+
+.button button:hover {
+     background-color:  hsl(223, 23%, 58%);
+}
+
+.foot {
+     margin-top: 10px;
+     font-size: 15px;
+     color:hsl(223, 3%, 52%) ;
+     cursor: pointer;
+}
+
+/* Responsive Styles */
+
+/* Mobile */
+@media (max-width: 374px) {
+     .card {
+       width: 100%;
+       height: auto;
+       margin: 1rem;
+       border-radius: 12px;
+     }
+   
+     .cover {
+       height: 10rem;
+     }
+   
+     .card-detail {
+       padding: 1.5rem;
+     }
+   
+     .heading {
+       font-size: 1.5rem;
+     }
+   
+     .para {
+       padding: 1rem 0;
+     }
+   
+     .button button {
+       padding: 0.8rem 3.5rem;
+       font-size: 0.8rem;
+     }
+   }
+   
+   /* Desktop */
+   @media (min-width: 768px) {
+     .card {
+       width: 23rem;
+       height: 88vh;
+       border-radius: 12px;
+     }
+   
+     .cover {
+       width: inherit;
+       height: 12rem;
+     }
+     
+  .card-detail {
+     padding: 2.5rem;
+   }
+
+   
+.foot {
+     margin-top: 10px;
+     font-size: 15px;
+     color:hsl(223, 3%, 52%) ;
+     cursor: pointer;
+}
+}
